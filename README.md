@@ -13,3 +13,9 @@ Players may optionally run the 'KMCoinBlocks' bookmarklet included in the source
 To use bookmarklet:
 Create a new bookmark and paste the entire 'KMCoinBlocks.txt' code into the bookmark's 'URL' field.
 Navigate to TheKittyMine discord's 'consensus' channel as a verified user and open the bookmark.
+
+
+Server: play.thekittymine.com
+Version: 1.21.8 - Java
+
+Discord: discord.gg/thekittymine
