@@ -144,7 +144,9 @@ catch (Exception ez3) {}
 
 mode=4;
 
-System.out.println(mode);
+//System.out.println(mode);
+
+new getFirstBlock();
 
 //new PrintWriter("syncMe.log").close();
 
@@ -250,5 +252,6 @@ destination2=null;
 }
 catch (IOException e) {System.err.println("Error copying file: " + e.getMessage());}
     }
+
 
 }
