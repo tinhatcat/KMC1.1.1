@@ -125,7 +125,7 @@ if(16800001<=hashedBlocki&&hashedBlocki<18900001){theirReward = Reward9;}
 if(18900001<=hashedBlocki&&hashedBlocki<21000001){theirReward = Reward10;}
 theWriter.write(theHashPlayer + "\n");
 theWriter.write("@" + hashedBlock + "\n");
-theWriter.write("0" + "\n");
+theWriter.write(theirReward + "\n");
 theWriter.write("0" + "\n");
 theWriter.write("0" + "\n");
 theWriter.write(theHash.replaceAll(" ", "") + "\n");
@@ -135,6 +135,7 @@ theCL = null;
 theFile = null;
 thePath = null;
 writeFirstBlock();
+  new getFirstBlock();
 }
 }
 theFile=null;
@@ -151,17 +152,8 @@ theHash=null;
 theCL=null;
 }
 
-
+  
 public void writeFirstBlock() throws IOException
-{
-
-File file = new File("first_block_mined.log");
-Path lPlayer = Paths.get("localplayer.txt");
-Path lPlayerL = Paths.get("lastplayerledger.log");
-String localPlayer = Files.readString(lPlayer);
-String lastPlayer = Files.readString(lPlayerL);
-
-if (file.exists() && file.length() == 0 && lastPlayer.equals(localPlayer)) 
 {
 Path thePath7 = Paths.get("first_block_mined.log");
 String theBlock2 = Files.readString(theBlockPath);
@@ -171,11 +163,5 @@ theBlockPath = null;
 theBlock2 = null;
 thePath7 = null;
 }
-lPlayer = null;
-lPlayerL = null;
-localPlayer = null;
-lastPlayer = null;
-file = null;
 }
 
-}
