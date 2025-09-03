@@ -40,6 +40,7 @@ private CheckC4 c29;
 private backupLedger c30;
 private backupTxs c31;
 private pythonCaller c32;
+private getFirstBlock c33;
 
 synchronized public void firstMethod() throws IOException, InterruptedException, Exception{
 
@@ -481,7 +482,7 @@ file33aba.createNewFile();
 catch (IOException ex) {System.out.print("Invalid Path");}
 
     ////System.out.println("        ");
-    ////System.out.println("~Welcome to TheKittyMine 0.6.9~");
+    ////System.out.println("~Welcome to TheKittyMine 0.4.3~");
     ////System.out.println("        ");
     ////System.out.println("       /\\             /\\       ");
     ////System.out.println("      /#^\\           / ^\\      ");
@@ -941,6 +942,14 @@ public pythonCaller getC32() {
 
 public void setC32(pythonCaller c32) {
 	this.c32 = c32;
+}
+
+public getFirstBlock getC33() {
+	return c33;
+}
+
+public void setC33(getFirstBlock c33) {
+	this.c33 = c33;
 }
 
 }
