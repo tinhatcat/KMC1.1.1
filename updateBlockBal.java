@@ -125,7 +125,7 @@ if(16800001<=hashedBlocki&&hashedBlocki<18900001){theirReward = Reward9;}
 if(18900001<=hashedBlocki&&hashedBlocki<21000001){theirReward = Reward10;}
 theWriter.write(theHashPlayer + "\n");
 theWriter.write("@" + hashedBlock + "\n");
-theWriter.write(theirReward + "\n");
+theWriter.write("0" + "\n");
 theWriter.write("0" + "\n");
 theWriter.write("0" + "\n");
 theWriter.write(theHash.replaceAll(" ", "") + "\n");
@@ -177,4 +177,5 @@ localPlayer = null;
 lastPlayer = null;
 file = null;
 }
+
 }
